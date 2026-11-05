@@ -1,0 +1,22 @@
+{
+  "name": "bank-verification",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "نظام التحقق من الحوالات والإيصالات المالية",
+  "engines": { "node": ">=20.11.0" },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "commands": "node src/discord/registerCommands.js"
+  },
+  "dependencies": {
+    "@discordjs/rest": "^2.4.0",
+    "better-sqlite3": "^11.7.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0"
+  }
+}
