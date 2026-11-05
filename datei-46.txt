@@ -1,0 +1,2 @@
+POST https://<your-domain>/webhook/rajhi
+Header: x-webhook-signature: <hex HMAC-SHA256 للجسم باستخدام WEBHOOK_SECRET>

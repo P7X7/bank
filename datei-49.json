@@ -1,0 +1,8 @@
+{
+  "amount": 1500.0,
+  "currency": "SAR",
+  "sender_name": "محمد أحمد",
+  "beneficiary_name": "شركة المثال",
+  "operation_number": "123456789",
+  "occurred_at": "2025-01-01T12:30:00+03:00"
+}

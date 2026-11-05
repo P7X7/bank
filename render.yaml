@@ -1,0 +1,44 @@
+services:
+  - type: web
+    name: bank-verification
+    env: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    disk:
+      name: bank-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_PATH
+        value: /var/data/bank.sqlite
+      - key: TRUST_PROXY
+        value: "true"
+      - key: ANTHROPIC_MODEL
+        value: claude-sonnet-4-6
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: DISCORD_CLIENT_ID
+        sync: false
+      - key: DISCORD_ADMIN_ROLE_IDS
+        sync: false
+      - key: DISCORD_STAFF_ROLE_IDS
+        sync: false
+      - key: DISCORD_RECEIPTS_CHANNEL_ID
+        sync: false
+      - key: DISCORD_REVIEW_CHANNEL_ID
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: WEBHOOK_SECRET
+        sync: false
+      - key: ADMIN_USERNAME
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: PUBLIC_URL
+        sync: false

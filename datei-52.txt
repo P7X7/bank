@@ -1,0 +1,10 @@
+
+---
+
+## طريقة التشغيل السريعة
+
+```bash
+npm install
+cp .env.example .env
+# املأ DISCORD_TOKEN, DISCORD_CLIENT_ID, ANTHROPIC_API_KEY, ADMIN_PASSWORD, WEBHOOK_SECRET
+npm start
